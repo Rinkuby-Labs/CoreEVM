@@ -233,7 +233,6 @@ func checkBlockChainState(
 	require.NoError(err)
 	require.NoError(checkState(acceptedState), "Check state failed for original blockchain")
 
-	oldChainDataDir := bc.CacheConfig().ChainDataDir // cacheConfig uses same reference in most tests
 	newBlockChain, err := create(newDB, gspec, common.Hash{}, t.TempDir())
 	require.NoError(err, "Failed to create new blockchain instance")
 	defer newBlockChain.Stop()
@@ -257,7 +256,7 @@ func checkBlockChainState(
 	// Copy the database over to prevent any issues when re-using [originalDB] after this call.
 	originalDB, err = copyMemDB(originalDB)
 	require.NoError(err)
-	newChainDataDir := copyDir(t, oldChainDataDir)
+	newChainDataDir := copyDir(t, "")
 	restartedChain, err := create(originalDB, gspec, lastAcceptedBlock.Hash(), newChainDataDir)
 	require.NoError(err)
 	defer restartedChain.Stop()

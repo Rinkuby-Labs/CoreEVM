@@ -32,8 +32,6 @@ import (
 
 	"github.com/ava-labs/coreth/core/extstate"
 	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
-	"github.com/ava-labs/coreth/triedb/firewood"
 	"github.com/ava-labs/coreth/triedb/hashdb"
 	"github.com/ava-labs/coreth/triedb/pathdb"
 	"github.com/ava-labs/libevm/common"
@@ -67,10 +65,6 @@ func MakePreState(db ethdb.Database, accounts types.GenesisAlloc, snapshotter bo
 		tconf.DBOverride = hashdb.Defaults.BackendConstructor
 	case rawdb.PathScheme:
 		tconf.DBOverride = pathdb.Defaults.BackendConstructor
-	case customrawdb.FirewoodScheme:
-		cfg := firewood.Defaults
-		cfg.ChainDataDir = tempdir
-		tconf.DBOverride = cfg.BackendConstructor
 	default:
 		panic("unknown trie database scheme" + scheme)
 	}

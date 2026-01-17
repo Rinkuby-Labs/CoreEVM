@@ -99,7 +99,6 @@ func newTestBackend(t *testing.T, n int, gspec *core.Genesis, scheme string, gen
 		CommitInterval:            4096,
 		StateScheme:               scheme,
 		StateHistory:              100, // Sufficient history for testing
-		ChainDataDir:              t.TempDir(),
 	}
 	if scheme == customrawdb.FirewoodScheme {
 		cacheConfig.SnapshotLimit = 0 // Firewood does not support snapshots

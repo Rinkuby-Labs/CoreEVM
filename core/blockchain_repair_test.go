@@ -555,7 +555,6 @@ func testRepairWithScheme(t *testing.T, tt *rewindTest, snapshots bool, scheme s
 			SnapshotLimit:             0, // Disable snapshot by default
 			StateHistory:              32,
 			StateScheme:               scheme,
-			ChainDataDir:              datadir,
 		}
 	)
 	defer engine.Close()

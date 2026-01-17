@@ -20,7 +20,6 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/triedb/firewood"
 	"github.com/ava-labs/coreth/triedb/hashdb"
 )
 
@@ -80,34 +79,12 @@ func newFuzzState(t *testing.T) *fuzzState {
 		r.NoError(hashState.TrieDB().Close())
 	})
 
-	firewoodMemdb := rawdb.NewMemoryDatabase()
-	fwCfg := firewood.Defaults       // copy the defaults
-	fwCfg.ChainDataDir = t.TempDir() // Use a temporary directory for the Firewood
-	firewoodState := NewDatabaseWithConfig(
-		firewoodMemdb,
-		&triedb.Config{
-			DBOverride: fwCfg.BackendConstructor,
-		},
-	)
-	fwTr, err := firewoodState.OpenTrie(ethRoot)
-	r.NoError(err)
-	t.Cleanup(func() {
-		r.NoError(firewoodState.TrieDB().Close())
-	})
-
 	return &fuzzState{
 		merkleTries: []*merkleTrie{
 			{
 				name:             "hash",
 				ethDatabase:      hashState,
 				accountTrie:      hashTr,
-				openStorageTries: make(map[common.Address]state.Trie),
-				lastRoot:         ethRoot,
-			},
-			{
-				name:             "firewood",
-				ethDatabase:      firewoodState,
-				accountTrie:      fwTr,
 				openStorageTries: make(map[common.Address]state.Trie),
 				lastRoot:         ethRoot,
 			},
@@ -148,12 +125,9 @@ func (fs *fuzzState) commit() {
 		}
 
 		// HashDB/PathDB only allows updating the triedb if there have been changes.
-		if _, ok := tr.ethDatabase.TrieDB().Backend().(*firewood.Database); ok {
+		if updatedRoot != tr.lastRoot {
 			triedbopt := stateconf.WithTrieDBUpdatePayload(common.Hash{byte(int64(fs.blockNumber - 1))}, common.Hash{byte(int64(fs.blockNumber))})
 			fs.require.NoError(tr.ethDatabase.TrieDB().Update(updatedRoot, tr.lastRoot, fs.blockNumber, mergedNodeSet, nil, triedbopt), "failed to update triedb in %s", tr.name)
-			tr.lastRoot = updatedRoot
-		} else if updatedRoot != tr.lastRoot {
-			fs.require.NoError(tr.ethDatabase.TrieDB().Update(updatedRoot, tr.lastRoot, fs.blockNumber, mergedNodeSet, nil), "failed to update triedb in %s", tr.name)
 			tr.lastRoot = updatedRoot
 		}
 		tr.openStorageTries = make(map[common.Address]state.Trie)

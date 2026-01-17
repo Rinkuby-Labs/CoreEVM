@@ -38,10 +38,8 @@ import (
 	"github.com/ava-labs/coreth/consensus/dummy"
 	"github.com/ava-labs/coreth/params"
 	"github.com/ava-labs/coreth/params/extras"
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
 	"github.com/ava-labs/coreth/plugin/evm/upgrade/ap3"
 	"github.com/ava-labs/coreth/precompile/contracts/warp"
-	"github.com/ava-labs/coreth/triedb/firewood"
 	"github.com/ava-labs/coreth/triedb/pathdb"
 	"github.com/ava-labs/coreth/utils"
 	"github.com/ava-labs/libevm/common"
@@ -69,7 +67,7 @@ func TestGenesisBlockForTesting(t *testing.T) {
 }
 
 func TestSetupGenesis(t *testing.T) {
-	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme} {
 		t.Run(scheme, func(t *testing.T) {
 			testSetupGenesis(t, scheme)
 		})
@@ -149,7 +147,6 @@ func testSetupGenesis(t *testing.T, scheme string) {
 				tdb.Close()
 
 				cacheConfig := DefaultCacheConfigWithScheme(scheme)
-				cacheConfig.ChainDataDir = t.TempDir()
 				bc, err := NewBlockChain(db, cacheConfig, &oldcustomg, dummy.NewFullFaker(), vm.Config{}, genesis.Hash(), false)
 				if err != nil {
 					t.Fatal(err)
@@ -303,11 +300,6 @@ func newDbConfig(t *testing.T, scheme string) *triedb.Config {
 		return triedb.HashDefaults
 	case rawdb.PathScheme:
 		return &triedb.Config{DBOverride: pathdb.Defaults.BackendConstructor}
-	case customrawdb.FirewoodScheme:
-		fwCfg := firewood.Defaults
-		// Create a unique temporary directory for each test
-		fwCfg.ChainDataDir = t.TempDir()
-		return &triedb.Config{DBOverride: fwCfg.BackendConstructor}
 	default:
 		t.Fatalf("unknown scheme %s", scheme)
 	}
