@@ -35,7 +35,6 @@ import (
 	"github.com/ava-labs/avalanchego/vms/components/gas"
 	"github.com/ava-labs/avalanchego/vms/evm/acp176"
 	"github.com/ava-labs/avalanchego/vms/evm/acp226"
-	"github.com/ava-labs/firewood-go-ethhash/ffi"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"
@@ -68,7 +67,6 @@ import (
 	"github.com/ava-labs/coreth/params"
 	"github.com/ava-labs/coreth/params/extras"
 	"github.com/ava-labs/coreth/plugin/evm/config"
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
 	"github.com/ava-labs/coreth/plugin/evm/extension"
 	"github.com/ava-labs/coreth/plugin/evm/gossip"
 	"github.com/ava-labs/coreth/plugin/evm/message"
@@ -133,18 +131,14 @@ var (
 )
 
 var (
-	errInvalidBlock                               = errors.New("invalid block")
-	errInvalidNonce                               = errors.New("invalid nonce")
-	errUnclesUnsupported                          = errors.New("uncles unsupported")
-	errNilBaseFeeApricotPhase3                    = errors.New("nil base fee is invalid after apricotPhase3")
-	errNilBlockGasCostApricotPhase4               = errors.New("nil blockGasCost is invalid after apricotPhase4")
-	errInvalidHeaderPredicateResults              = errors.New("invalid header predicate results")
-	errInitializingLogger                         = errors.New("failed to initialize logger")
-	errShuttingDownVM                             = errors.New("shutting down VM")
-	errFirewoodSnapshotCacheDisabled              = errors.New("snapshot cache must be disabled for Firewood")
-	errFirewoodOfflinePruningUnsupported          = errors.New("offline pruning is not supported for Firewood")
-	errFirewoodStateSyncUnsupported               = errors.New("state sync is not yet supported for Firewood")
-	errFirewoodMissingTrieRepopulationUnsupported = errors.New("missing trie repopulation is not supported for Firewood")
+	errInvalidBlock                  = errors.New("invalid block")
+	errInvalidNonce                  = errors.New("invalid nonce")
+	errUnclesUnsupported             = errors.New("uncles unsupported")
+	errNilBaseFeeApricotPhase3       = errors.New("nil base fee is invalid after apricotPhase3")
+	errNilBlockGasCostApricotPhase4  = errors.New("nil blockGasCost is invalid after apricotPhase4")
+	errInvalidHeaderPredicateResults = errors.New("invalid header predicate results")
+	errInitializingLogger            = errors.New("failed to initialize logger")
+	errShuttingDownVM                = errors.New("shutting down VM")
 )
 
 var originalStderr *os.File
@@ -391,23 +385,6 @@ func (vm *VM) Initialize(
 	vm.ethConfig.SkipTxIndexing = vm.config.SkipTxIndexing
 	vm.ethConfig.StateScheme = vm.config.StateScheme
 
-	if vm.ethConfig.StateScheme == customrawdb.FirewoodScheme {
-		log.Warn("Firewood state scheme is enabled")
-		log.Warn("This is untested in production, use at your own risk")
-		// Firewood does not support iterators, so the snapshot cannot be constructed
-		if vm.config.SnapshotCache > 0 {
-			return errFirewoodSnapshotCacheDisabled
-		}
-		if vm.config.OfflinePruning {
-			return errFirewoodOfflinePruningUnsupported
-		}
-		if vm.config.StateSyncEnabled == nil || *vm.config.StateSyncEnabled {
-			return errFirewoodStateSyncUnsupported
-		}
-		if vm.config.PopulateMissingTries != nil {
-			return errFirewoodMissingTrieRepopulationUnsupported
-		}
-	}
 	if vm.ethConfig.StateScheme == rawdb.PathScheme {
 		log.Warn("Path state scheme is not supported. Please use HashDB or Firewood state schemes instead")
 	}
@@ -513,14 +490,6 @@ func (vm *VM) initializeMetrics() error {
 		return err
 	}
 
-	if vm.config.MetricsExpensiveEnabled && vm.config.StateScheme == customrawdb.FirewoodScheme {
-		if err := ffi.StartMetrics(); err != nil {
-			return fmt.Errorf("failed to start firewood metrics collection: %w", err)
-		}
-		if err := vm.ctx.Metrics.Register("firewood", ffi.Gatherer{}); err != nil {
-			return fmt.Errorf("failed to register firewood metrics: %w", err)
-		}
-	}
 	return vm.ctx.Metrics.Register(sdkMetricsPrefix, vm.sdkMetrics)
 }
 
@@ -589,18 +558,14 @@ func (vm *VM) initializeStateSync(lastAcceptedHeight uint64) error {
 	// Create standalone EVM TrieDB (read only) for serving leafs requests.
 	// We create a standalone TrieDB here, so that it has a standalone cache from the one
 	// used by the node when processing blocks.
-	// However, Firewood does not support multiple TrieDBs, so we use the same one.
-	evmTrieDB := vm.eth.BlockChain().TrieDB()
-	if vm.ethConfig.StateScheme != customrawdb.FirewoodScheme {
-		evmTrieDB = triedb.NewDatabase(
-			vm.chaindb,
-			&triedb.Config{
-				DBOverride: hashdb.Config{
-					CleanCacheSize: vm.config.StateSyncServerTrieCache * units.MiB,
-				}.BackendConstructor,
-			},
-		)
-	}
+	evmTrieDB := triedb.NewDatabase(
+		vm.chaindb,
+		&triedb.Config{
+			DBOverride: hashdb.Config{
+				CleanCacheSize: vm.config.StateSyncServerTrieCache * units.MiB,
+			}.BackendConstructor,
+		},
+	)
 	leafHandlers := make(LeafHandlers)
 	leafMetricsNames := make(map[message.NodeType]string)
 	// register default leaf request handler for state trie

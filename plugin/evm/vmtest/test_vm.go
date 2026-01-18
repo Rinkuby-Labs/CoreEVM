@@ -5,7 +5,6 @@ package vmtest
 
 import (
 	"context"
-	"encoding/json"
 	"fmt"
 	"testing"
 
@@ -19,14 +18,13 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
 	"github.com/ava-labs/coreth/plugin/evm/extension"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 	commoneng "github.com/ava-labs/avalanchego/snow/engine/common"
 )
 
-var Schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+var Schemes = []string{rawdb.HashScheme}
 
 type TestVMConfig struct {
 	IsSyncing bool
@@ -109,29 +107,12 @@ func ResetMetrics(snowCtx *snow.Context) {
 }
 
 func OverrideSchemeConfig(scheme string, configJSON string) (string, error) {
-	// If the scheme is not Firewood, return the configJSON as is
-	if scheme != customrawdb.FirewoodScheme {
+	switch scheme {
+	case rawdb.HashScheme:
 		return configJSON, nil
+	default:
+		return "", fmt.Errorf("unsupported state scheme %s (firewood is not supported)", scheme)
 	}
-
-	// Parse existing config into a map to preserve only non-zero values
-	configMap := make(map[string]interface{})
-	if len(configJSON) > 0 {
-		if err := json.Unmarshal([]byte(configJSON), &configMap); err != nil {
-			return "", err
-		}
-	}
-
-	// Set Firewood-specific configuration flags (these will override any existing values)
-	configMap["state-scheme"] = customrawdb.FirewoodScheme
-	configMap["snapshot-cache"] = 0
-	configMap["pruning-enabled"] = true
-	configMap["state-sync-enabled"] = false
-	configMap["metrics-expensive-enabled"] = false
-
-	// Marshal back to JSON
-	result, err := json.Marshal(configMap)
-	return string(result), err
 }
 
 func IssueTxsAndBuild(txs []*types.Transaction, vm extension.InnerVM) (snowman.Block, error) {

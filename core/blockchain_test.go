@@ -72,7 +72,6 @@ var (
 		AcceptorQueueLimit:        64,
 	}
 
-	// Firewood should only be included for snapshot disabled tests.
 	schemes = []string{rawdb.HashScheme, rawdb.PathScheme}
 )
 
@@ -126,8 +125,8 @@ func testArchiveBlockChainSnapsDisabled(t *testing.T, scheme string) {
 			TrieDirtyCommitTarget:     20,
 			TriePrefetcherParallelism: 4,
 			Pruning:                   false, // Archive mode
-			StateHistory:              32,    // Required for Firewood's minimum Revision count
-			SnapshotLimit:             0,     // Disable snapshots
+			StateHistory:              32,
+			SnapshotLimit:             0, // Disable snapshots
 			AcceptorQueueLimit:        64,
 			StateScheme:               scheme,
 		}

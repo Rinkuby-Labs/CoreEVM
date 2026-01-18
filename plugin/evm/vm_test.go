@@ -47,7 +47,6 @@ import (
 	"github.com/ava-labs/coreth/params"
 	"github.com/ava-labs/coreth/params/paramstest"
 	"github.com/ava-labs/coreth/plugin/evm/customheader"
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
 	"github.com/ava-labs/coreth/plugin/evm/customtypes"
 	"github.com/ava-labs/coreth/plugin/evm/extension"
 	"github.com/ava-labs/coreth/plugin/evm/message"
@@ -211,7 +210,7 @@ func testVMUpgrades(t *testing.T, scheme string) {
 
 func TestBuildEthTxBlock(t *testing.T) {
 	// This test is done for all schemes to ensure the VM can be started with any scheme.
-	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme, customrawdb.FirewoodScheme} {
+	for _, scheme := range []string{rawdb.HashScheme, rawdb.PathScheme} {
 		t.Run(scheme, func(t *testing.T) {
 			testBuildEthTxBlock(t, scheme)
 		})

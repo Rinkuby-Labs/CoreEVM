@@ -43,7 +43,6 @@ import (
 	"github.com/ava-labs/coreth/core"
 	"github.com/ava-labs/coreth/internal/ethapi"
 	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
 	"github.com/ava-labs/coreth/rpc"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"
@@ -62,7 +61,7 @@ var (
 	errStateNotFound = errors.New("state not found")
 	errBlockNotFound = errors.New("block not found")
 
-	schemes = []string{rawdb.HashScheme, customrawdb.FirewoodScheme}
+	schemes = []string{rawdb.HashScheme, rawdb.PathScheme}
 )
 
 type testBackend struct {
@@ -99,9 +98,6 @@ func newTestBackend(t *testing.T, n int, gspec *core.Genesis, scheme string, gen
 		CommitInterval:            4096,
 		StateScheme:               scheme,
 		StateHistory:              100, // Sufficient history for testing
-	}
-	if scheme == customrawdb.FirewoodScheme {
-		cacheConfig.SnapshotLimit = 0 // Firewood does not support snapshots
 	}
 
 	chain, err := core.NewBlockChain(backend.chaindb, cacheConfig, gspec, backend.engine, vm.Config{}, common.Hash{}, false)
