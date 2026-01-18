@@ -15,11 +15,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/coreth/consensus/dummy"
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
+	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/coreth/rpc"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

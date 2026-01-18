@@ -16,12 +16,12 @@ import (
 	"github.com/ava-labs/libevm/ethdb/memorydb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/plugin/evm/customrawdb"
-	"github.com/ava-labs/coreth/plugin/evm/message"
-	"github.com/ava-labs/coreth/sync/handlers"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customrawdb"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/sync/handlers"
 
-	statesyncclient "github.com/ava-labs/coreth/sync/client"
-	handlerstats "github.com/ava-labs/coreth/sync/handlers/stats"
+	statesyncclient "github.com/Rinkuby-Labs/coreth/sync/client"
+	handlerstats "github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
 )
 
 type codeSyncerTest struct {

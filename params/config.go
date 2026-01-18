@@ -30,8 +30,8 @@ package params
 import (
 	"math/big"
 
-	"github.com/ava-labs/coreth/params/extras"
-	"github.com/ava-labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/params/extras"
+	"github.com/Rinkuby-Labs/coreth/utils"
 	"github.com/ava-labs/libevm/libevm"
 	ethparams "github.com/ava-labs/libevm/params"
 )

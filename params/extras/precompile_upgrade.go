@@ -10,9 +10,9 @@ import (
 
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/coreth/precompile/modules"
-	"github.com/ava-labs/coreth/precompile/precompileconfig"
-	"github.com/ava-labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/precompile/modules"
+	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/coreth/utils"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

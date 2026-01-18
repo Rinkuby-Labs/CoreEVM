@@ -17,8 +17,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
 )
 
 var (

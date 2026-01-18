@@ -16,7 +16,7 @@ import (
 	"github.com/ava-labs/libevm/common/math"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/coreth/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
 )
 
 const (

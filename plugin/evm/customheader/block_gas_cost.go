@@ -11,10 +11,10 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/ava-labs/coreth/params/extras"
-	"github.com/ava-labs/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/coreth/plugin/evm/upgrade/ap4"
-	"github.com/ava-labs/coreth/plugin/evm/upgrade/ap5"
+	"github.com/Rinkuby-Labs/coreth/params/extras"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap4"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap5"
 )
 
 var (

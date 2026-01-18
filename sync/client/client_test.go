@@ -19,16 +19,16 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/consensus/dummy"
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/coreth/plugin/evm/message"
-	"github.com/ava-labs/coreth/sync/handlers"
-	"github.com/ava-labs/coreth/sync/statesync/statesynctest"
+	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
+	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/sync/handlers"
+	"github.com/Rinkuby-Labs/coreth/sync/statesync/statesynctest"
 
-	clientstats "github.com/ava-labs/coreth/sync/client/stats"
-	handlerstats "github.com/ava-labs/coreth/sync/handlers/stats"
+	clientstats "github.com/Rinkuby-Labs/coreth/sync/client/stats"
+	handlerstats "github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 

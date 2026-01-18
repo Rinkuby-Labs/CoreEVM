@@ -12,7 +12,7 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/crypto"
 
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
 )
 
 var _ message.Syncable = (*Summary)(nil)

@@ -11,7 +11,7 @@ import (
 	"github.com/ava-labs/avalanchego/snow"
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/ava-labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/utils"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

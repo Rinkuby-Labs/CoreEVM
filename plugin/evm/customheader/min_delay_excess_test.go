@@ -10,10 +10,10 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/params/extras"
-	"github.com/ava-labs/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/coreth/utils"
-	"github.com/ava-labs/coreth/utils/utilstest"
+	"github.com/Rinkuby-Labs/coreth/params/extras"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
 )
 
 func TestMinDelayExcess(t *testing.T) {

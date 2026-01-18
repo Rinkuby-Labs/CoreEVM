@@ -12,7 +12,7 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/coreth/ethclient"
+	"github.com/Rinkuby-Labs/coreth/ethclient"
 )
 
 type ethereumTxWorker struct {

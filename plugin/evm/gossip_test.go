@@ -20,12 +20,12 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/consensus/dummy"
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/txpool"
-	"github.com/ava-labs/coreth/core/txpool/legacypool"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
+	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/Rinkuby-Labs/coreth/core/txpool"
+	"github.com/Rinkuby-Labs/coreth/core/txpool/legacypool"
+	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/utils"
 )
 
 func TestGossipEthTxMarshaller(t *testing.T) {

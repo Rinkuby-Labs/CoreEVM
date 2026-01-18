@@ -17,10 +17,10 @@ import (
 	"github.com/holiman/uint256"
 	"go.uber.org/zap"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/txpool"
-	"github.com/ava-labs/coreth/plugin/evm/customtypes"
-	"github.com/ava-labs/coreth/plugin/evm/extension"
+	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/Rinkuby-Labs/coreth/core/txpool"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/extension"
 
 	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"
 )

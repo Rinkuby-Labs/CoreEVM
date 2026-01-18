@@ -37,20 +37,20 @@ import (
 
 	_ "embed"
 
-	"github.com/ava-labs/coreth/eth/tracers"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/params/extras"
-	"github.com/ava-labs/coreth/plugin/evm/customheader"
-	"github.com/ava-labs/coreth/plugin/evm/upgrade/ap0"
-	"github.com/ava-labs/coreth/plugin/evm/vmtest"
-	"github.com/ava-labs/coreth/precompile/contract"
-	"github.com/ava-labs/coreth/utils"
-	"github.com/ava-labs/coreth/warp"
+	"github.com/Rinkuby-Labs/coreth/eth/tracers"
+	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/params/extras"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customheader"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap0"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmtest"
+	"github.com/Rinkuby-Labs/coreth/precompile/contract"
+	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/warp"
 
 	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"
 	avagoUtils "github.com/ava-labs/avalanchego/utils"
 	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	warpcontract "github.com/ava-labs/coreth/precompile/contracts/warp"
+	warpcontract "github.com/Rinkuby-Labs/coreth/precompile/contracts/warp"
 )
 
 var (

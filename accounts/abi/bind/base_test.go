@@ -36,9 +36,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ava-labs/coreth/accounts/abi"
-	"github.com/ava-labs/coreth/accounts/abi/bind"
-	"github.com/ava-labs/coreth/nativeasset"
+	"github.com/Rinkuby-Labs/coreth/accounts/abi"
+	"github.com/Rinkuby-Labs/coreth/accounts/abi/bind"
+	"github.com/Rinkuby-Labs/coreth/nativeasset"
 	ethereum "github.com/ava-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/common/hexutil"

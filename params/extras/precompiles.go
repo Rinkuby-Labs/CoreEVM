@@ -6,8 +6,8 @@ package extras
 import (
 	"encoding/json"
 
-	"github.com/ava-labs/coreth/precompile/modules"
-	"github.com/ava-labs/coreth/precompile/precompileconfig"
+	"github.com/Rinkuby-Labs/coreth/precompile/modules"
+	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
 )
 
 type Precompiles map[string]precompileconfig.Config

@@ -12,9 +12,9 @@ import (
 	"github.com/ava-labs/libevm/metrics"
 	"github.com/ava-labs/libevm/triedb"
 
-	"github.com/ava-labs/coreth/plugin/evm/message"
-	"github.com/ava-labs/coreth/sync/handlers"
-	"github.com/ava-labs/coreth/sync/handlers/stats"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/sync/handlers"
+	"github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
 )
 
 var (

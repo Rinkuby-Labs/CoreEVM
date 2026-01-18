@@ -30,13 +30,13 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/txpool/blobpool"
-	"github.com/ava-labs/coreth/core/txpool/legacypool"
-	"github.com/ava-labs/coreth/eth/gasprice"
-	"github.com/ava-labs/coreth/internal/ethapi"
-	"github.com/ava-labs/coreth/miner"
-	"github.com/ava-labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/Rinkuby-Labs/coreth/core/txpool/blobpool"
+	"github.com/Rinkuby-Labs/coreth/core/txpool/legacypool"
+	"github.com/Rinkuby-Labs/coreth/eth/gasprice"
+	"github.com/Rinkuby-Labs/coreth/internal/ethapi"
+	"github.com/Rinkuby-Labs/coreth/miner"
+	"github.com/Rinkuby-Labs/coreth/params"
 	"github.com/ava-labs/libevm/common"
 )
 

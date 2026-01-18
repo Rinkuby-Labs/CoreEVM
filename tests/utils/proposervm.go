@@ -14,9 +14,9 @@ import (
 	"github.com/ava-labs/libevm/crypto"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/ava-labs/coreth/accounts/abi/bind"
-	"github.com/ava-labs/coreth/ethclient"
-	"github.com/ava-labs/coreth/plugin/evm/upgrade/ap1"
+	"github.com/Rinkuby-Labs/coreth/accounts/abi/bind"
+	"github.com/Rinkuby-Labs/coreth/ethclient"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap1"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

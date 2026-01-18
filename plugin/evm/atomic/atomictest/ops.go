@@ -6,7 +6,7 @@ package atomictest
 import (
 	"github.com/ava-labs/avalanchego/ids"
 
-	"github.com/ava-labs/coreth/plugin/evm/atomic"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 )

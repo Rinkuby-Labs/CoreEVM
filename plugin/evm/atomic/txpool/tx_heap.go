@@ -9,7 +9,7 @@ import (
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/holiman/uint256"
 
-	"github.com/ava-labs/coreth/plugin/evm/atomic"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
 )
 
 type txEntry struct {

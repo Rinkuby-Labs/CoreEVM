@@ -18,7 +18,7 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/plugin/evm/extension"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/extension"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 	commoneng "github.com/ava-labs/avalanchego/snow/engine/common"

@@ -30,10 +30,10 @@ package tests
 import (
 	"os"
 
-	"github.com/ava-labs/coreth/core/extstate"
-	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/triedb/hashdb"
-	"github.com/ava-labs/coreth/triedb/pathdb"
+	"github.com/Rinkuby-Labs/coreth/core/extstate"
+	"github.com/Rinkuby-Labs/coreth/core/state/snapshot"
+	"github.com/Rinkuby-Labs/coreth/triedb/hashdb"
+	"github.com/Rinkuby-Labs/coreth/triedb/pathdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/state"

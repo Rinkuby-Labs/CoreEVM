@@ -6,10 +6,10 @@ package evm
 import (
 	"github.com/ava-labs/libevm/libevm"
 
-	"github.com/ava-labs/coreth/core"
-	"github.com/ava-labs/coreth/core/extstate"
-	"github.com/ava-labs/coreth/params"
-	"github.com/ava-labs/coreth/plugin/evm/customtypes"
+	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/Rinkuby-Labs/coreth/core/extstate"
+	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
 )
 
 // RegisterAllLibEVMExtras is a convenience wrapper for calling

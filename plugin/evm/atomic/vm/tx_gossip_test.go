@@ -28,10 +28,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/ava-labs/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/coreth/plugin/evm/config"
-	"github.com/ava-labs/coreth/plugin/evm/vmtest"
-	"github.com/ava-labs/coreth/utils/utilstest"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/config"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmtest"
+	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 	agoUtils "github.com/ava-labs/avalanchego/utils"

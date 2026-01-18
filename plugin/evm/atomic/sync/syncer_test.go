@@ -19,14 +19,14 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/plugin/evm/atomic/atomictest"
-	"github.com/ava-labs/coreth/plugin/evm/atomic/state"
-	"github.com/ava-labs/coreth/plugin/evm/message"
-	"github.com/ava-labs/coreth/sync/handlers"
-	"github.com/ava-labs/coreth/sync/statesync/statesynctest"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/atomictest"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/state"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/sync/handlers"
+	"github.com/Rinkuby-Labs/coreth/sync/statesync/statesynctest"
 
-	syncclient "github.com/ava-labs/coreth/sync/client"
-	handlerstats "github.com/ava-labs/coreth/sync/handlers/stats"
+	syncclient "github.com/Rinkuby-Labs/coreth/sync/client"
+	handlerstats "github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
 )
 
 const (

@@ -28,9 +28,9 @@
 package core
 
 import (
-	"github.com/ava-labs/coreth/consensus"
-	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/consensus"
+	"github.com/Rinkuby-Labs/coreth/core/state/snapshot"
+	"github.com/Rinkuby-Labs/coreth/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/state"

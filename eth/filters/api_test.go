@@ -33,7 +33,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ava-labs/coreth/rpc"
+	"github.com/Rinkuby-Labs/coreth/rpc"
 	"github.com/ava-labs/libevm/common"
 )
 

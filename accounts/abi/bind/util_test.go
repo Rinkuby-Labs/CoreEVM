@@ -34,9 +34,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ava-labs/coreth/accounts/abi/bind"
-	"github.com/ava-labs/coreth/ethclient/simulated"
-	"github.com/ava-labs/coreth/params"
+	"github.com/Rinkuby-Labs/coreth/accounts/abi/bind"
+	"github.com/Rinkuby-Labs/coreth/ethclient/simulated"
+	"github.com/Rinkuby-Labs/coreth/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/crypto"

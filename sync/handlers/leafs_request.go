@@ -18,11 +18,11 @@ import (
 	"github.com/ava-labs/libevm/trie"
 	"github.com/ava-labs/libevm/triedb"
 
-	"github.com/ava-labs/coreth/core/state/snapshot"
-	"github.com/ava-labs/coreth/plugin/evm/message"
-	"github.com/ava-labs/coreth/sync/handlers/stats"
-	"github.com/ava-labs/coreth/sync/syncutils"
-	"github.com/ava-labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/core/state/snapshot"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
+	"github.com/Rinkuby-Labs/coreth/sync/syncutils"
+	"github.com/Rinkuby-Labs/coreth/utils"
 )
 
 var _ LeafRequestHandler = (*leafsRequestHandler)(nil)

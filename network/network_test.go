@@ -25,7 +25,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/ava-labs/coreth/plugin/evm/message"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
 )
 
 const (

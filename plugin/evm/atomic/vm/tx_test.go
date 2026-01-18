@@ -13,9 +13,9 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/ava-labs/coreth/params/extras"
-	"github.com/ava-labs/coreth/plugin/evm/atomic"
-	"github.com/ava-labs/coreth/utils"
+	"github.com/Rinkuby-Labs/coreth/params/extras"
+	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
+	"github.com/Rinkuby-Labs/coreth/utils"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 )
