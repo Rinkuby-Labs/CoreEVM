@@ -15,12 +15,12 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/Rinkuby-Labs/coreth/consensus"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customheader"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/consensus"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/customheader"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/utils"
 )
 
 var (

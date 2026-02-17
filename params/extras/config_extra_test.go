@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/utils"
 )
 
 func TestIsTimestampForked(t *testing.T) {

@@ -14,10 +14,10 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/utils/utilstest"
 
-	syncpkg "github.com/Rinkuby-Labs/coreth/sync"
+	syncpkg "github.com/rink-labs/coreth/sync"
 )
 
 var _ syncpkg.Syncer = (*mockSyncer)(nil)

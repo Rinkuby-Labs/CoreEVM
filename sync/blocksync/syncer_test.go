@@ -17,15 +17,15 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/sync/handlers"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/sync/handlers"
 
-	syncclient "github.com/Rinkuby-Labs/coreth/sync/client"
-	handlerstats "github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
+	syncclient "github.com/rink-labs/coreth/sync/client"
+	handlerstats "github.com/rink-labs/coreth/sync/handlers/stats"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 

@@ -7,7 +7,7 @@ When building developing your own blockchain using `coreth`, you may want to ana
 To build the load simulator, navigate to the base of the simulator directory:
 
 ```bash
-cd $GOPATH/src/github.com/Rinkuby-Labs/coreth/cmd/simulator
+cd $GOPATH/src/github.com/rink-labs/coreth/cmd/simulator
 ```
 
 Build the simulator:

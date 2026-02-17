@@ -16,11 +16,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"github.com/Rinkuby-Labs/coreth/core/extstate"
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/precompile/contract"
-	"github.com/Rinkuby-Labs/coreth/precompile/modules"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/coreth/core/extstate"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/precompile/contract"
+	"github.com/rink-labs/coreth/precompile/modules"
+	"github.com/rink-labs/coreth/precompile/precompileconfig"
 )
 
 // PrecompileTest is a test case for a precompile

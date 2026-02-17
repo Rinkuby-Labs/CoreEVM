@@ -12,8 +12,8 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/utils"
 )
 
 var ErrFailedToFetchLeafs = errors.New("failed to fetch leafs")

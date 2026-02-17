@@ -30,7 +30,7 @@ package ethapi
 import (
 	"fmt"
 
-	"github.com/Rinkuby-Labs/coreth/accounts/abi"
+	"github.com/rink-labs/coreth/accounts/abi"
 	"github.com/ava-labs/libevm/common/hexutil"
 	"github.com/ava-labs/libevm/core/vm"
 )

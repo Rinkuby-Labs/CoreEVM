@@ -6,7 +6,7 @@ package paramstest
 import (
 	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
 
-	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/rink-labs/coreth/params"
 )
 
 var ForkToChainConfig = map[upgradetest.Fork]*params.ChainConfig{

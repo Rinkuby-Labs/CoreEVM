@@ -11,9 +11,9 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/Rinkuby-Labs/coreth/cmd/simulator/config"
-	"github.com/Rinkuby-Labs/coreth/cmd/simulator/load"
-	"github.com/Rinkuby-Labs/coreth/log"
+	"github.com/rink-labs/coreth/cmd/simulator/config"
+	"github.com/rink-labs/coreth/cmd/simulator/load"
+	"github.com/rink-labs/coreth/log"
 
 	gethlog "github.com/ava-labs/libevm/log"
 )

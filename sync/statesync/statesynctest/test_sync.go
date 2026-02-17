@@ -11,7 +11,7 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/triedb"
 
-	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
+	"github.com/rink-labs/coreth/utils/utilstest"
 )
 
 // FillAccountsWithOverlappingStorage adds [numAccounts] randomly generated accounts to the secure trie at [root]

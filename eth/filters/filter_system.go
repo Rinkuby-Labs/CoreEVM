@@ -35,9 +35,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/rpc"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/rpc"
 	ethereum "github.com/ava-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/bloombits"

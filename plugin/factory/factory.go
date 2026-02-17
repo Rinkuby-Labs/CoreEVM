@@ -9,9 +9,9 @@ import (
 	"github.com/ava-labs/avalanchego/utils/logging"
 	"github.com/ava-labs/avalanchego/vms"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm"
+	"github.com/rink-labs/coreth/plugin/evm"
 
-	atomicvm "github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/vm"
+	atomicvm "github.com/rink-labs/coreth/plugin/evm/atomic/vm"
 )
 
 var (

@@ -15,7 +15,7 @@ import (
 	"github.com/ava-labs/libevm/libevm/stateconf"
 	"github.com/holiman/uint256"
 
-	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/coreth/precompile/precompileconfig"
 
 	ethtypes "github.com/ava-labs/libevm/core/types"
 )

@@ -17,11 +17,11 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/ava-labs/libevm/trie"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customrawdb"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/plugin/evm/customrawdb"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/utils"
 
-	syncclient "github.com/Rinkuby-Labs/coreth/sync/client"
+	syncclient "github.com/rink-labs/coreth/sync/client"
 )
 
 var (

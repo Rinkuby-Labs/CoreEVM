@@ -12,7 +12,7 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/holiman/uint256"
 
-	"github.com/Rinkuby-Labs/coreth/precompile/contract"
+	"github.com/rink-labs/coreth/precompile/contract"
 )
 
 // PrecompiledContractsApricot contains the default set of pre-compiled Ethereum

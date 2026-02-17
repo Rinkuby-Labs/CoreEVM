@@ -20,8 +20,8 @@ import (
 	"github.com/ava-labs/libevm/trie/trienode"
 	"github.com/ava-labs/libevm/triedb"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/triedb/hashdb"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/triedb/hashdb"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 	avalanchedatabase "github.com/ava-labs/avalanchego/database"

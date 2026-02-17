@@ -14,13 +14,13 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/core/extstate"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/atomictest"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/extension"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmtest"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/core/extstate"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/atomic/atomictest"
+	"github.com/rink-labs/coreth/plugin/evm/extension"
+	"github.com/rink-labs/coreth/plugin/evm/vmtest"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

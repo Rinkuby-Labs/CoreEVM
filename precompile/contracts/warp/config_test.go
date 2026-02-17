@@ -8,9 +8,9 @@ import (
 
 	"go.uber.org/mock/gomock"
 
-	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompiletest"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/coreth/precompile/precompiletest"
+	"github.com/rink-labs/coreth/utils"
 )
 
 func TestVerify(t *testing.T) {

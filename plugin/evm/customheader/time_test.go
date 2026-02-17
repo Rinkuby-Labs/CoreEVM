@@ -11,9 +11,9 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/utils"
 )
 
 func TestVerifyTime(t *testing.T) {

@@ -38,28 +38,28 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/constants"
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/eth"
-	"github.com/Rinkuby-Labs/coreth/miner"
-	"github.com/Rinkuby-Labs/coreth/node"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/params/paramstest"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customheader"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/extension"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap0"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap1"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmtest"
-	"github.com/Rinkuby-Labs/coreth/rpc"
-	"github.com/Rinkuby-Labs/coreth/utils"
-	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/constants"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/eth"
+	"github.com/rink-labs/coreth/miner"
+	"github.com/rink-labs/coreth/node"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/params/paramstest"
+	"github.com/rink-labs/coreth/plugin/evm/customheader"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/plugin/evm/extension"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap1"
+	"github.com/rink-labs/coreth/plugin/evm/vmtest"
+	"github.com/rink-labs/coreth/rpc"
+	"github.com/rink-labs/coreth/utils"
+	"github.com/rink-labs/coreth/utils/utilstest"
 
 	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"
 	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
-	warpcontract "github.com/Rinkuby-Labs/coreth/precompile/contracts/warp"
+	warpcontract "github.com/rink-labs/coreth/precompile/contracts/warp"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 
@@ -1709,7 +1709,7 @@ func TestWaitForEvent(t *testing.T) {
 				require.Equal(t, commonEng.PendingTxs, res.msg)
 			},
 		},
-		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/Rinkuby-Labs/coreth/issues/1318)
+		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/rink-labs/coreth/issues/1318)
 		{
 			name: "WaitForEvent does not wait for new block to be built in fortuna",
 			Fork: &fortunaFork,
@@ -1730,7 +1730,7 @@ func TestWaitForEvent(t *testing.T) {
 				require.Equal(t, commonEng.PendingTxs, msg)
 			},
 		},
-		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/Rinkuby-Labs/coreth/issues/1318)
+		// TODO (ceyonur): remove this test after Granite is activated. (See https://github.com/rink-labs/coreth/issues/1318)
 		{
 			name: "WaitForEvent waits for a delay with a retry in fortuna",
 			Fork: &fortunaFork,

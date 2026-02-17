@@ -25,8 +25,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/atomictest"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/atomic/atomictest"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 )

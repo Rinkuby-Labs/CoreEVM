@@ -15,7 +15,7 @@ import (
 	"github.com/ava-labs/avalanchego/vms/platformvm/warp/payload"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/warp/warptest"
+	"github.com/rink-labs/coreth/warp/warptest"
 
 	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"
 )

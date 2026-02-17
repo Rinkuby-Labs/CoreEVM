@@ -33,8 +33,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/Rinkuby-Labs/coreth/internal/version"
-	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/rink-labs/coreth/internal/version"
+	"github.com/rink-labs/coreth/params"
 	"github.com/mattn/go-isatty"
 	"github.com/urfave/cli/v2"
 )

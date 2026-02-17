@@ -22,14 +22,14 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/Rinkuby-Labs/coreth/core/state/snapshot"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customrawdb"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/sync/handlers"
-	"github.com/Rinkuby-Labs/coreth/sync/statesync/statesynctest"
+	"github.com/rink-labs/coreth/core/state/snapshot"
+	"github.com/rink-labs/coreth/plugin/evm/customrawdb"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/sync/handlers"
+	"github.com/rink-labs/coreth/sync/statesync/statesynctest"
 
-	statesyncclient "github.com/Rinkuby-Labs/coreth/sync/client"
-	handlerstats "github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
+	statesyncclient "github.com/rink-labs/coreth/sync/client"
+	handlerstats "github.com/rink-labs/coreth/sync/handlers/stats"
 )
 
 const testRequestSize = 1024

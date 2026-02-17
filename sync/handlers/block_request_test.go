@@ -19,13 +19,13 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
-	"github.com/Rinkuby-Labs/coreth/sync/handlers/stats/statstest"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/sync/handlers/stats"
+	"github.com/rink-labs/coreth/sync/handlers/stats/statstest"
 )
 
 func TestMain(m *testing.M) {

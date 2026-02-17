@@ -7,7 +7,7 @@ package eth
 import (
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/Rinkuby-Labs/coreth/core"
+	"github.com/rink-labs/coreth/core"
 )
 
 const blocksToKeep = 604_800 // Approx. 2 weeks worth of blocks assuming 2s block time

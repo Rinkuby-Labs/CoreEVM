@@ -31,8 +31,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/params"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"

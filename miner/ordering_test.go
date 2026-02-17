@@ -34,7 +34,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/core/txpool"
+	"github.com/rink-labs/coreth/core/txpool"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/crypto"

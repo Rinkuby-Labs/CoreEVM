@@ -3,7 +3,7 @@
 
 package precompileconfig
 
-import "github.com/Rinkuby-Labs/coreth/utils"
+import "github.com/rink-labs/coreth/utils"
 
 // Upgrade contains the timestamp for the upgrade along with
 // a boolean [Disable]. If [Disable] is set, the upgrade deactivates

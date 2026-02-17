@@ -25,11 +25,11 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/params/extras/extrastest"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompiletest"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/params/extras/extrastest"
+	"github.com/rink-labs/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/coreth/precompile/precompiletest"
+	"github.com/rink-labs/coreth/utils"
 
 	agoUtils "github.com/ava-labs/avalanchego/utils"
 	safemath "github.com/ava-labs/avalanchego/utils/math"

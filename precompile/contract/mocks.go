@@ -16,7 +16,7 @@ import (
 	snow "github.com/ava-labs/avalanchego/snow"
 	set "github.com/ava-labs/avalanchego/utils/set"
 	predicate "github.com/ava-labs/avalanchego/vms/evm/predicate"
-	precompileconfig "github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
+	precompileconfig "github.com/rink-labs/coreth/precompile/precompileconfig"
 	common "github.com/ava-labs/libevm/common"
 	types "github.com/ava-labs/libevm/core/types"
 	vm "github.com/ava-labs/libevm/core/vm"

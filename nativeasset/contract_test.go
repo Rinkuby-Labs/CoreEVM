@@ -15,15 +15,15 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/core/extstate"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/core/extstate"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
 
 	ethtypes "github.com/ava-labs/libevm/core/types"
 	ethparams "github.com/ava-labs/libevm/params"
 
-	. "github.com/Rinkuby-Labs/coreth/nativeasset"
+	. "github.com/rink-labs/coreth/nativeasset"
 )
 
 func TestMain(m *testing.M) {

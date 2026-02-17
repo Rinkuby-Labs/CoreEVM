@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
+	"github.com/rink-labs/coreth/sync/handlers/stats"
 )
 
 var _ stats.HandlerStats = (*TestHandlerStats)(nil)

@@ -12,11 +12,11 @@ import (
 	"github.com/ava-labs/avalanchego/network/p2p"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/Rinkuby-Labs/coreth/eth"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/config"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/extension"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmsync"
+	"github.com/rink-labs/coreth/eth"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/config"
+	"github.com/rink-labs/coreth/plugin/evm/extension"
+	"github.com/rink-labs/coreth/plugin/evm/vmsync"
 )
 
 var _ extension.InnerVM = (*VM)(nil)

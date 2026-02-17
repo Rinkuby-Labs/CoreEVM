@@ -19,12 +19,12 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/core/extstate"
-	"github.com/Rinkuby-Labs/coreth/params/extras/extrastest"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap0"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmtest"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/core/extstate"
+	"github.com/rink-labs/coreth/params/extras/extrastest"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/coreth/plugin/evm/vmtest"
+	"github.com/rink-labs/coreth/utils"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 	commonEng "github.com/ava-labs/avalanchego/snow/engine/common"

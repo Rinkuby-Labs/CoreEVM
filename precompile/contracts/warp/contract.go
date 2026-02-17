@@ -16,9 +16,9 @@ import (
 
 	_ "embed"
 
-	"github.com/Rinkuby-Labs/coreth/accounts/abi"
-	"github.com/Rinkuby-Labs/coreth/precompile/contract"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/coreth/accounts/abi"
+	"github.com/rink-labs/coreth/precompile/contract"
+	"github.com/rink-labs/coreth/precompile/precompileconfig"
 )
 
 const addWarpMessageBaseGasCost uint64 = 20_000 // Cost of producing and serving a BLS Signature

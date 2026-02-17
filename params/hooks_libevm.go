@@ -17,12 +17,12 @@ import (
 	"github.com/ava-labs/libevm/libevm"
 	"github.com/ava-labs/libevm/libevm/legacy"
 
-	"github.com/Rinkuby-Labs/coreth/nativeasset"
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customheader"
-	"github.com/Rinkuby-Labs/coreth/precompile/contract"
-	"github.com/Rinkuby-Labs/coreth/precompile/modules"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompileconfig"
+	"github.com/rink-labs/coreth/nativeasset"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/customheader"
+	"github.com/rink-labs/coreth/precompile/contract"
+	"github.com/rink-labs/coreth/precompile/modules"
+	"github.com/rink-labs/coreth/precompile/precompileconfig"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

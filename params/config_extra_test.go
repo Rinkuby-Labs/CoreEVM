@@ -11,8 +11,8 @@ import (
 	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/utils"
 )
 
 func TestMain(m *testing.M) {

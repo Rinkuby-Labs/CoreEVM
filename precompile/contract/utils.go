@@ -11,7 +11,7 @@ import (
 	"github.com/ava-labs/libevm/core/vm"
 	"github.com/ava-labs/libevm/crypto"
 
-	"github.com/Rinkuby-Labs/coreth/accounts/abi"
+	"github.com/rink-labs/coreth/accounts/abi"
 )
 
 // Gas costs for stateful precompiles

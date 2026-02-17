@@ -11,12 +11,12 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/extension"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap5"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/plugin/evm/extension"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap5"
+	"github.com/rink-labs/coreth/utils"
 
 	safemath "github.com/ava-labs/avalanchego/utils/math"
 )

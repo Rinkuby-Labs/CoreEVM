@@ -35,7 +35,7 @@ func init() {
 	)
 
 	// Deprecated Warp request/responde types are skipped
-	// See https://github.com/Rinkuby-Labs/coreth/pull/999
+	// See https://github.com/rink-labs/coreth/pull/999
 	c.SkipRegistrations(3)
 
 	errs.Add(Codec.RegisterCodec(Version, c))

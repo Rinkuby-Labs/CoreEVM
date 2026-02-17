@@ -18,7 +18,7 @@ Coreth is a dependency of AvalancheGo which is used to implement the EVM based V
 
 ```bash
 cd $GOPATH/src/github.com/ava-labs/avalanchego
-go mod edit -replace github.com/Rinkuby-Labs/coreth=../coreth
+go mod edit -replace github.com/rink-labs/coreth=../coreth
 ```
 
 Now that AvalancheGo depends on the local version of Coreth, we can build with the normal build script:

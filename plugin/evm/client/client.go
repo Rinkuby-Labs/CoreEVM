@@ -16,8 +16,8 @@ import (
 	"github.com/ava-labs/avalanchego/utils/rpc"
 	"golang.org/x/exp/slog"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/config"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/config"
 )
 
 // Interface compliance

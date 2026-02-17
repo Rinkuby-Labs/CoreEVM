@@ -34,9 +34,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/utils"
 	"github.com/ava-labs/libevm/libevm"
 )
 

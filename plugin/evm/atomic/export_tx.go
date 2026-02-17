@@ -24,9 +24,9 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/holiman/uint256"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap0"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap5"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap5"
 
 	avalancheutils "github.com/ava-labs/avalanchego/utils"
 )

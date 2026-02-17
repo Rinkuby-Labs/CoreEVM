@@ -10,12 +10,12 @@ import (
 	"github.com/ava-labs/avalanchego/utils/math"
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap0"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap1"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap5"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/cortina"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap1"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap5"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/cortina"
 )
 
 var (

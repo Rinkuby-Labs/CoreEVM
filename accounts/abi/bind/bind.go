@@ -40,7 +40,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/Rinkuby-Labs/coreth/accounts/abi"
+	"github.com/rink-labs/coreth/accounts/abi"
 	"github.com/ava-labs/libevm/log"
 )
 

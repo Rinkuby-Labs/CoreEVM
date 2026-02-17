@@ -10,7 +10,7 @@ import (
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/avalanchego/version"
 
-	"github.com/Rinkuby-Labs/coreth/network"
+	"github.com/rink-labs/coreth/network"
 )
 
 var _ network.SyncedNetworkClient = (*testNetwork)(nil)

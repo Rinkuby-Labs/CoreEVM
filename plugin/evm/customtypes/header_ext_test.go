@@ -17,7 +17,7 @@ import (
 	"github.com/ava-labs/libevm/rlp"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
+	"github.com/rink-labs/coreth/utils/utilstest"
 )
 
 func TestHeaderRLP(t *testing.T) {

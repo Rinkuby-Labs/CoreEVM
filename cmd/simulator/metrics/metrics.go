@@ -15,7 +15,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/Rinkuby-Labs/coreth/rpc"
+	"github.com/rink-labs/coreth/rpc"
 )
 
 type Metrics struct {

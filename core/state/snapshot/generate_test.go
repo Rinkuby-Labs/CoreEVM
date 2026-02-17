@@ -33,9 +33,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
-	"github.com/Rinkuby-Labs/coreth/triedb/hashdb"
-	"github.com/Rinkuby-Labs/coreth/triedb/pathdb"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/triedb/hashdb"
+	"github.com/rink-labs/coreth/triedb/pathdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"

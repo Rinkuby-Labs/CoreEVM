@@ -10,9 +10,9 @@ import (
 	"github.com/ava-labs/avalanchego/upgrade/upgradetest"
 	"github.com/ava-labs/libevm/common"
 
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/params/paramstest"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/params/paramstest"
 )
 
 func ForkToRules(fork upgradetest.Fork) *extras.Rules {

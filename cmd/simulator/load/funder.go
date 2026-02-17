@@ -13,10 +13,10 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/Rinkuby-Labs/coreth/cmd/simulator/key"
-	"github.com/Rinkuby-Labs/coreth/cmd/simulator/metrics"
-	"github.com/Rinkuby-Labs/coreth/cmd/simulator/txs"
-	"github.com/Rinkuby-Labs/coreth/ethclient"
+	"github.com/rink-labs/coreth/cmd/simulator/key"
+	"github.com/rink-labs/coreth/cmd/simulator/metrics"
+	"github.com/rink-labs/coreth/cmd/simulator/txs"
+	"github.com/rink-labs/coreth/ethclient"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

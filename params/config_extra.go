@@ -11,8 +11,8 @@ import (
 
 	"github.com/ava-labs/avalanchego/upgrade"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/utils"
 )
 
 const (

@@ -33,9 +33,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/core/extstate"
-	"github.com/Rinkuby-Labs/coreth/eth/tracers"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/core/extstate"
+	"github.com/rink-labs/coreth/eth/tracers"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/state"

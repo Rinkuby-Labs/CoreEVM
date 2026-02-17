@@ -10,7 +10,7 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/constants"
+	"github.com/rink-labs/coreth/constants"
 )
 
 func TestInsertSortedByAddress(t *testing.T) {

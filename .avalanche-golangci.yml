@@ -40,7 +40,7 @@ formatters:
         - standard
         - default
         - blank
-        - prefix(github.com/Rinkuby-Labs/coreth)
+        - prefix(github.com/rink-labs/coreth)
         - alias
         - dot
       custom-order: true

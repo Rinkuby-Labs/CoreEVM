@@ -11,10 +11,10 @@ import (
 	"github.com/ava-labs/libevm/common/hexutil"
 
 	// Force-load precompiles to trigger registration
-	_ "github.com/Rinkuby-Labs/coreth/precompile/registry"
+	_ "github.com/rink-labs/coreth/precompile/registry"
 
-	"github.com/Rinkuby-Labs/coreth/accounts/abi/bind"
-	"github.com/Rinkuby-Labs/coreth/interfaces"
+	"github.com/rink-labs/coreth/accounts/abi/bind"
+	"github.com/rink-labs/coreth/interfaces"
 
 	ethereum "github.com/ava-labs/libevm"
 )

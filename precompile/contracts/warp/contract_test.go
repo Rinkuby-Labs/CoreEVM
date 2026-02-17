@@ -18,10 +18,10 @@ import (
 	"github.com/ava-labs/libevm/core/vm"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/params/extras/extrastest"
-	"github.com/Rinkuby-Labs/coreth/precompile/contract"
-	"github.com/Rinkuby-Labs/coreth/precompile/precompiletest"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/params/extras/extrastest"
+	"github.com/rink-labs/coreth/precompile/contract"
+	"github.com/rink-labs/coreth/precompile/precompiletest"
 
 	agoUtils "github.com/ava-labs/avalanchego/utils"
 	avalancheWarp "github.com/ava-labs/avalanchego/vms/platformvm/warp"

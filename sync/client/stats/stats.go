@@ -9,7 +9,7 @@ import (
 
 	"github.com/ava-labs/libevm/metrics"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/plugin/evm/message"
 )
 
 var (

@@ -14,8 +14,8 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/sync/handlers/stats"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/sync/handlers/stats"
 )
 
 // CodeRequestHandler is a peer.RequestHandler for message.CodeRequest

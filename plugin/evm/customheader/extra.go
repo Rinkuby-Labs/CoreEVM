@@ -12,9 +12,9 @@ import (
 	"github.com/ava-labs/avalanchego/vms/evm/acp176"
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap0"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap3"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap0"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap3"
 )
 
 var (

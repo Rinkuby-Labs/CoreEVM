@@ -32,7 +32,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/utils"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/core/types"

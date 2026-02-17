@@ -11,7 +11,7 @@ import (
 	"github.com/ava-labs/avalanchego/utils/profiler"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/client"
+	"github.com/rink-labs/coreth/plugin/evm/client"
 )
 
 // Admin is the API service for admin API calls

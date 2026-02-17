@@ -17,8 +17,8 @@ import (
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/utils"
-	"github.com/Rinkuby-Labs/coreth/utils/utilstest"
+	"github.com/rink-labs/coreth/utils"
+	"github.com/rink-labs/coreth/utils/utilstest"
 )
 
 func TestCopyHeader(t *testing.T) {

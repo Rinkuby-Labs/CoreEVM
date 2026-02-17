@@ -12,7 +12,7 @@ import (
 	"github.com/ava-labs/libevm/common/math"
 	"github.com/ava-labs/libevm/core/vm"
 
-	"github.com/Rinkuby-Labs/coreth/precompile/contract"
+	"github.com/rink-labs/coreth/precompile/contract"
 )
 
 var (

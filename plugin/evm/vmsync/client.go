@@ -18,15 +18,15 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/ava-labs/libevm/log"
 
-	"github.com/Rinkuby-Labs/coreth/core/state/snapshot"
-	"github.com/Rinkuby-Labs/coreth/eth"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/sync/blocksync"
-	"github.com/Rinkuby-Labs/coreth/sync/statesync"
+	"github.com/rink-labs/coreth/core/state/snapshot"
+	"github.com/rink-labs/coreth/eth"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/sync/blocksync"
+	"github.com/rink-labs/coreth/sync/statesync"
 
-	syncpkg "github.com/Rinkuby-Labs/coreth/sync"
-	syncclient "github.com/Rinkuby-Labs/coreth/sync/client"
+	syncpkg "github.com/rink-labs/coreth/sync"
+	syncclient "github.com/rink-labs/coreth/sync/client"
 )
 
 // BlocksToFetch is the number of the block parents the state syncs to.

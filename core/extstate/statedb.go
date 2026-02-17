@@ -14,8 +14,8 @@ import (
 	"github.com/ava-labs/libevm/libevm/stateconf"
 	"github.com/holiman/uint256"
 
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
 )
 
 // RegisterExtras registers hooks with libevm to achieve Avalanche state

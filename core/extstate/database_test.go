@@ -20,7 +20,7 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/triedb/hashdb"
+	"github.com/rink-labs/coreth/triedb/hashdb"
 )
 
 const (

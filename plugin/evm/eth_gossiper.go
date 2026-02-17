@@ -17,10 +17,10 @@ import (
 	"github.com/ava-labs/libevm/log"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/core/txpool"
-	"github.com/Rinkuby-Labs/coreth/eth"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/config"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/core/txpool"
+	"github.com/rink-labs/coreth/eth"
+	"github.com/rink-labs/coreth/plugin/evm/config"
 
 	ethcommon "github.com/ava-labs/libevm/common"
 )

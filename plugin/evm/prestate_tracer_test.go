@@ -19,9 +19,9 @@ import (
 	"github.com/ava-labs/libevm/core/vm"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/eth/tracers"
-	"github.com/Rinkuby-Labs/coreth/tests"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/eth/tracers"
+	"github.com/rink-labs/coreth/tests"
 )
 
 func TestPrestateWithDiffModeANTTracer(t *testing.T) {

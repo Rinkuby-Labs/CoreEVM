@@ -30,7 +30,7 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/Rinkuby-Labs/coreth/core/vm/runtime"
+	"github.com/rink-labs/coreth/core/vm/runtime"
 	"github.com/ava-labs/libevm/common"
 )
 

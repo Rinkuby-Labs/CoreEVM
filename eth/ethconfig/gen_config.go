@@ -5,12 +5,12 @@ package ethconfig
 import (
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/core"
-	"github.com/Rinkuby-Labs/coreth/core/txpool/blobpool"
-	"github.com/Rinkuby-Labs/coreth/core/txpool/legacypool"
-	"github.com/Rinkuby-Labs/coreth/eth/gasprice"
-	"github.com/Rinkuby-Labs/coreth/internal/ethapi"
-	"github.com/Rinkuby-Labs/coreth/miner"
+	"github.com/rink-labs/coreth/core"
+	"github.com/rink-labs/coreth/core/txpool/blobpool"
+	"github.com/rink-labs/coreth/core/txpool/legacypool"
+	"github.com/rink-labs/coreth/eth/gasprice"
+	"github.com/rink-labs/coreth/internal/ethapi"
+	"github.com/rink-labs/coreth/miner"
 	"github.com/ava-labs/libevm/common"
 )
 

@@ -7,7 +7,7 @@ package ap0
 import (
 	"github.com/ava-labs/avalanchego/utils/units"
 
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/utils"
 )
 
 const (

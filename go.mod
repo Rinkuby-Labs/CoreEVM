@@ -1,4 +1,4 @@
-module github.com/Rinkuby-Labs/coreth
+module github.com/rink-labs/coreth
 
 // CLI tools intended for invocation with `go tool` should be added to
 // tools/go.mod to avoid polluting the main module's dependencies. See

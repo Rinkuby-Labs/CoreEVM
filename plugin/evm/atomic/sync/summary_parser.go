@@ -9,7 +9,7 @@ import (
 	"github.com/ava-labs/avalanchego/ids"
 	"github.com/ava-labs/libevm/crypto"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/plugin/evm/message"
 )
 
 var _ message.SyncableParser = (*summaryParser)(nil)

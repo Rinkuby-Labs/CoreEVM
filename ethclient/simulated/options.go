@@ -28,8 +28,8 @@
 package simulated
 
 import (
-	"github.com/Rinkuby-Labs/coreth/eth/ethconfig"
-	"github.com/Rinkuby-Labs/coreth/node"
+	"github.com/rink-labs/coreth/eth/ethconfig"
+	"github.com/rink-labs/coreth/node"
 )
 
 // WithBlockGasLimit configures the simulated backend to target a specific gas limit

@@ -20,11 +20,11 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/core/extstate"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customheader"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/upgrade/ap4"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/core/extstate"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/plugin/evm/customheader"
+	"github.com/rink-labs/coreth/plugin/evm/upgrade/ap4"
 
 	ethparams "github.com/ava-labs/libevm/params"
 )

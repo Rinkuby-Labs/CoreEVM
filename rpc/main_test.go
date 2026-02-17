@@ -31,7 +31,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customtypes"
+	"github.com/rink-labs/coreth/plugin/evm/customtypes"
 )
 
 func TestMain(m *testing.M) {

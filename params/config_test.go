@@ -34,8 +34,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/utils"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/utils"
 	ethparams "github.com/ava-labs/libevm/params"
 )
 

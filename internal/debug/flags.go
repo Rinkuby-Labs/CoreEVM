@@ -37,7 +37,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/Rinkuby-Labs/coreth/internal/flags"
+	"github.com/rink-labs/coreth/internal/flags"
 	"github.com/ava-labs/libevm/log"
 	"github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"

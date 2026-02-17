@@ -1,4 +1,4 @@
-module github.com/Rinkuby-Labs/coreth/tools
+module github.com/rink-labs/coreth/tools
 
 go 1.24.9
 

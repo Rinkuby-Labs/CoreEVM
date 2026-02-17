@@ -18,17 +18,17 @@ import (
 	"github.com/ava-labs/libevm/core/types"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/Rinkuby-Labs/coreth/consensus/dummy"
-	"github.com/Rinkuby-Labs/coreth/eth"
-	"github.com/Rinkuby-Labs/coreth/params"
-	"github.com/Rinkuby-Labs/coreth/params/extras"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/config"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/vmsync"
-	"github.com/Rinkuby-Labs/coreth/sync/handlers"
+	"github.com/rink-labs/coreth/consensus/dummy"
+	"github.com/rink-labs/coreth/eth"
+	"github.com/rink-labs/coreth/params"
+	"github.com/rink-labs/coreth/params/extras"
+	"github.com/rink-labs/coreth/plugin/evm/config"
+	"github.com/rink-labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/plugin/evm/vmsync"
+	"github.com/rink-labs/coreth/sync/handlers"
 
 	avalanchecommon "github.com/ava-labs/avalanchego/snow/engine/common"
-	synccommon "github.com/Rinkuby-Labs/coreth/sync"
+	synccommon "github.com/rink-labs/coreth/sync"
 )
 
 var (

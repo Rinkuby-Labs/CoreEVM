@@ -13,7 +13,7 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/atomictest"
+	"github.com/rink-labs/coreth/plugin/evm/atomic/atomictest"
 
 	avalancheatomic "github.com/ava-labs/avalanchego/chains/atomic"
 )

@@ -34,10 +34,10 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/Rinkuby-Labs/coreth/params"
+	"github.com/rink-labs/coreth/params"
 )
 
-const ourPath = "github.com/Rinkuby-Labs/coreth" // Path to our module
+const ourPath = "github.com/rink-labs/coreth" // Path to our module
 
 // These variables are set at build-time by the linker when the build is
 // done by build/ci.go.

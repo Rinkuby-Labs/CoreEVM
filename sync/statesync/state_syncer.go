@@ -16,10 +16,10 @@ import (
 	"github.com/ava-labs/libevm/triedb"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/Rinkuby-Labs/coreth/core/state/snapshot"
+	"github.com/rink-labs/coreth/core/state/snapshot"
 
-	syncpkg "github.com/Rinkuby-Labs/coreth/sync"
-	syncclient "github.com/Rinkuby-Labs/coreth/sync/client"
+	syncpkg "github.com/rink-labs/coreth/sync"
+	syncclient "github.com/rink-labs/coreth/sync/client"
 )
 
 const (

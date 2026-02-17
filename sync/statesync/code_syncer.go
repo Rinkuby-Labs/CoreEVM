@@ -14,11 +14,11 @@ import (
 	"github.com/ava-labs/libevm/libevm/options"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customrawdb"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/message"
+	"github.com/rink-labs/coreth/plugin/evm/customrawdb"
+	"github.com/rink-labs/coreth/plugin/evm/message"
 
-	syncpkg "github.com/Rinkuby-Labs/coreth/sync"
-	statesyncclient "github.com/Rinkuby-Labs/coreth/sync/client"
+	syncpkg "github.com/rink-labs/coreth/sync"
+	statesyncclient "github.com/rink-labs/coreth/sync/client"
 )
 
 const defaultNumCodeFetchingWorkers = 5

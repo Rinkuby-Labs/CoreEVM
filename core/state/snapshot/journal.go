@@ -33,7 +33,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customrawdb"
+	"github.com/rink-labs/coreth/plugin/evm/customrawdb"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/rawdb"
 	"github.com/ava-labs/libevm/ethdb"

@@ -13,8 +13,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic"
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/config"
+	"github.com/rink-labs/coreth/plugin/evm/atomic"
+	"github.com/rink-labs/coreth/plugin/evm/config"
 )
 
 var (

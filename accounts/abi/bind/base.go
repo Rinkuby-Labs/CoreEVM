@@ -35,9 +35,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Rinkuby-Labs/coreth/accounts/abi"
-	"github.com/Rinkuby-Labs/coreth/nativeasset"
-	"github.com/Rinkuby-Labs/coreth/rpc"
+	"github.com/rink-labs/coreth/accounts/abi"
+	"github.com/rink-labs/coreth/nativeasset"
+	"github.com/rink-labs/coreth/rpc"
 	ethereum "github.com/ava-labs/libevm"
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"

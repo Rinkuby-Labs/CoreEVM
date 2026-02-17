@@ -10,8 +10,8 @@ import (
 	"github.com/ava-labs/libevm/common"
 	"github.com/ava-labs/libevm/core/types"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/atomic/state"
-	"github.com/Rinkuby-Labs/coreth/sync"
+	"github.com/rink-labs/coreth/plugin/evm/atomic/state"
+	"github.com/rink-labs/coreth/sync"
 )
 
 var _ sync.SummaryProvider = (*SummaryProvider)(nil)

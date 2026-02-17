@@ -14,7 +14,7 @@ import (
 	"github.com/ava-labs/libevm/ethdb"
 	"github.com/ava-labs/libevm/libevm/options"
 
-	"github.com/Rinkuby-Labs/coreth/plugin/evm/customrawdb"
+	"github.com/rink-labs/coreth/plugin/evm/customrawdb"
 )
 
 const defaultQueueCapacity = 5000
